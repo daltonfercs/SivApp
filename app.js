@@ -1,5 +1,5 @@
 const express = require('express')
-const mysql = require('mysql')
+const mysql = require('mysql2')
 const bodyParser = require('body-parser')
 /*import express from 'express'
 import mysql from 'mysql2'
