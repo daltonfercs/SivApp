@@ -1,8 +1,8 @@
-//const express = require('express')
-//const mysql = require('mysql')
-//const bodyParser = require('body-parser')
-import express from 'express'
-import mysql from 'mysql'
+const express = require('express')
+const mysql = require('mysql')
+const bodyParser = require('body-parser')
+/*import express from 'express'
+import mysql from 'mysql2'
 import bodyParser from 'body-parser'
 import {
     DB_HOST,
@@ -11,11 +11,16 @@ import {
     DB_PORT,
     DB_USER,
     PORTG
-} from  './config.js'
+} from  './config.js'*/
 
 const app = express()
 
-const PORT = PORTG
+const PORT = process.env.PORT || 3000
+const    DB_HOST =   process.env.DB_HOST || 'localhost'
+const    DB_USER =   process.env.DB_USER || 'root'
+const    DB_PASSWORD = process.env.DB_PASSWORD || ''
+const    DB_NAME =   process.env.DB_NAME || 'db_siv_app'
+const    DB_PORT =   process.env.DB_PORT ||  3306
 
 const conexion = mysql.createConnection(
     {
