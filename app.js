@@ -1,10 +1,10 @@
-const express = require('express')
+/*const express = require('express')
 const mysql = require('mysql')
-const bodyParser = require('body-parser')
-/*import express from 'express'
+const bodyParser = require('body-parser')*/
+import express from 'express'
 import mysql from 'mysql2'
 import bodyParser from 'body-parser'
-import {
+/*import {
     DB_HOST,
     DB_NAME,
     DB_PASSWORD,
@@ -25,8 +25,8 @@ const    DB_PORT =   process.env.DB_PORT ||  3306
 const conexion = mysql.createConnection(
     {
         host: DB_HOST,
-        database: DB_NAME,
         port: DB_PORT,
+        database: DB_NAME,        
         user: DB_USER,
         password: DB_PASSWORD
     }
