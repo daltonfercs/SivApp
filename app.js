@@ -2,7 +2,7 @@
 const mysql = require('mysql')
 const bodyParser = require('body-parser')*/
 import express from 'express'
-import mysql from 'mysql'
+import mysql from 'mysql2'
 import bodyParser from 'body-parser'
 /*import {
     DB_HOST,
